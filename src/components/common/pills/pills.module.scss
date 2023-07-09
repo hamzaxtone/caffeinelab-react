@@ -1,0 +1,47 @@
+.pillsItemWrapper{
+    background: #F1F8FA;
+    padding: 12px 24px;
+    border-radius: 12px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    @media (max-width: 767px){
+        padding: 6px 12px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+    span{
+        color: #212121;
+        font-size: 16px;
+        @media (max-width: 767px){
+            margin-right: 13px;
+        }
+    }
+    .btnCancelledPill{
+        position: absolute;
+        top: -3px;
+        right: -3px;
+        @media (max-width: 767px){
+            position: relative;
+            top: 3px;
+            right: 0;
+        }
+    }
+}
+
+html[lang=ar]{
+    .pillsItemWrapper{
+        margin-right: 0;
+        margin-left: 16px;
+        .btnCancelledPill{
+            right: unset;
+            left: -3px;
+            @media (max-width: 767px){
+                position: relative;
+                top: 3px;
+               left: unset;
+               right: 0;
+            }
+        }
+        
+    }
+}

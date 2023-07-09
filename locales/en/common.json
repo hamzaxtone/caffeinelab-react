@@ -1,0 +1,18 @@
+{
+    "home": {
+      "title": "Home",
+      "description": "Home description",
+      "categorySecHeading": "Shop By Category",
+      "firstProductSecHeading": "Ramadan Top Coffee Deals",
+      "secondProductSecHeading": "Arabic & Turkish Coffee Selection",
+      "brandsSecHeading": "Shop by Brands"
+    },
+    "about": {
+      "title": "About title",
+      "description": "About description"
+    },
+    "header": {
+      "Home": "Home",
+      "About": "About"
+    }
+  }

@@ -1,0 +1,83 @@
+.myaccountWrapper{
+    
+}
+.leftWrapper{
+    ul{
+        li{
+            &.active{
+                background-color: #F1F8FA;
+                border-radius: 5px;
+               @media(max-width:767px){
+                background-color: transparent;
+               } 
+            }
+            &.logoutMbl{
+                @media(max-width: 767px){
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+.rightWrapper{
+    &.profileSec{
+        
+    }
+
+}
+
+.addressManagementWrapper{
+    .tagSec{
+        .tag{
+           margin-right: 5px;
+           margin-bottom: 5px;
+        }
+    }
+}
+
+.orders{
+    .tabStyle1{
+       margin: 0 40px 0 0;
+       @media(max-width:767px){
+        margin: unset;
+        flex:  1;
+       }
+    }
+}
+
+.mblHeader{
+    background-color: #e5e5e559;
+    margin: 0 -15px;
+    padding: 8px 15px;
+}
+
+html[lang="ar"]{
+   .leftWrapper{
+    .active{
+        .right{
+            .icon-menuback{
+                transform: rotate(180deg);
+            }
+        }
+    }
+   }
+   .addressManagementWrapper{
+    .tagSec{
+        .tag{
+           margin-right: 0;
+           margin-left: 5px;
+          
+        }
+    }
+    }
+    .orders{
+        .tabStyle1{
+           margin: 0 0px 0 40px;
+          
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.radioCustomWrp{
+    position: relative;
+    input{
+        opacity: 0;
+        z-index: 1;
+    }
+    input,
+    .radioCustom{
+        width: 24px;
+        height: 24px;
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        border-radius: 12px;
+    }
+    .radioCustom{
+        border: 1px solid #08BFB0;
+        &:before{
+            content: '';
+            background-color: #08BFB0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    .radioText{
+        margin-left: 35px;
+        color: #111111 ;
+    }
+
+}
+.radioCustomWrp input:checked + .radioCustom:before{
+ opacity: 1;
+}
+
+html[lang=ar]{
+    .radioCustomWrp{
+        .radioText{
+            margin-left: 0;
+            margin-right: 35px;
+        }
+    }
+}

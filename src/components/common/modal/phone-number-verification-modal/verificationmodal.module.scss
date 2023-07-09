@@ -1,0 +1,53 @@
+@import '../../../../styles/variables.scss';
+.otpNumberWrp{
+    margin: 0 -9px;
+    > div{
+        justify-content: center;
+    }
+    @media (max-width: 1023px){
+        > div{
+            justify-content: center;
+        }
+    }
+    
+    input{
+        width: 63px !important;
+        height: 60px;
+        border: 1px solid #D5D5D5;
+        border-radius: 8px;
+        margin: 0 15px;
+        font-size: 24px;
+        color: $primary-darkgray-100;
+        @media (max-width: 1024px){
+            width: 56px !important;
+            height: 56px;
+        }
+        @media (max-width: 767px){
+            width: 39px !important;
+            height: 39px;
+            font-size: 18px;
+            margin: 0 8px;
+        }
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button{
+            -webkit-appearance: none !important;
+        }
+        &:focus-visible{
+            outline: none;
+        }
+        &::placeholder {
+            color: #AFAFAF;
+            opacity: 1;
+        }
+          
+        &:-ms-input-placeholder { 
+           color: #AFAFAF
+        }
+          
+        &::-ms-input-placeholder {
+            color: #AFAFAF;
+        }
+        
+    }
+
+}
